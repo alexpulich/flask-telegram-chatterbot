@@ -30,3 +30,5 @@ e.g. `URL_ROOT = 'https://9a5eb2fb.ngrok.io/'`
 ## Authors
 
 * **Alex Pulich** - *Currently all the work* - [alexpulich](https://github.com/alexpulich)
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/83ca49330e0a43d3a94198e9f7ea96a5)](https://www.codacy.com/project/alexpulich/flask-telegram-chatterbot/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alexpulich/flask-telegram-chatterbot&amp;utm_campaign=Badge_Grade_Dashboard)

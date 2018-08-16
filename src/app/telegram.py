@@ -45,7 +45,7 @@ class TelegramBotManager:
         Initializing handlers for different types of messages
         :return:
         """
-        self.dispatcher.add_handler(MessageHandler(Filters.text, self._text_handler))
+        self.dispatcher.add_handler(MessageHandler(Filters.text, self.text_handler))
 
     def handle_request(self, data):
         """
@@ -66,7 +66,8 @@ class TelegramBotManager:
         self.set_webhook()
         self.init_handlers()
 
-    def _text_handler(self, bot, update):
+    @staticmethod
+    def text_handler(bot, update):
         """
         Handler for text messages from telegram
         :param telegram.Bot bot: telegram bot instance

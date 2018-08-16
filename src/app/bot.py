@@ -15,7 +15,7 @@ class Bot:
         :param database_file: path to sqlite database file
         :param default_response: response to send when can't find out the answer in
         """
-        self.bot = self._create_chatbot(name, database_file, default_response)
+        self.bot = self.create_chatbot(name, database_file, default_response)
 
     def get_response(self, message):
         """
@@ -28,7 +28,8 @@ class Bot:
         response = statement.text
         return response
 
-    def _create_chatbot(self, name, database_file, default_response):
+    @staticmethod
+    def create_chatbot(name, database_file, default_response):
         """
         Create chatterbot.ChatBot instance
         :param str name: chatbot's name
